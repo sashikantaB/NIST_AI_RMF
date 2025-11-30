@@ -1,0 +1,9 @@
+# AI Model Risk Register — <Model Name>
+
+| Risk ID | Description                          | Likelihood (1-5) | Impact (1-5) | Risk Score | Control / Mitigation                              | Owner                   | Status      | Residual Risk |
+|---------|--------------------------------------|----------------- |--------------|----------- |---------------------------------------------------|-------------------------|-------------|---------------|
+| R1      | Disparate impact for protected group |         4        |      5       |     20     | Pre-processing reweighting + fairness constraints | Data Science Lead       | In progress | Medium |
+| R2      | Model drift over time                |         3        |      4       |     12     | Scheduled monitoring, retraining pipeline         | MLOps                   | Planned     | Medium |
+| R3      | Data leakage / PII exposure          |         2        |      5       |     10     | Tokenization, access control, encryption          | Security / Privacy Lead | Active      | Low |
+| R4      | Adversarial input / manipulation     |         3        |      3       |      9     | Robustness testing, anomaly detection             | Model Owner             | Planned     | Low |
+| R5      | Unauthorized model usage             |         2        |      4       |      8     | RBAC, authentication, logging                     | IT / Ops                | Active      | Low |
