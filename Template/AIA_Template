@@ -1,0 +1,67 @@
+# AI Impact Assessment (AIA) — <Project / Model Name>
+
+## 1. Basic Information
+- Model Name: 
+- Business Unit: 
+- Model Owner: 
+- Risk/Compliance Reviewer: 
+- Version: 
+- Date: 
+
+## 2. Use Case Description
+- Problem AI solves
+- Decision type: Advisory / Decision-Making / Autonomous
+- Stakeholders affected
+
+## 3. Context & Criticality Assessment
+---------------------------------------------------
+| Impact Type        | Description | Score (1–5)  |
+|--------------------|-------------|--------------|
+| Legal/Regulatory   |             |              |
+---------------------------------------------------
+| Financial          |             |              |
+---------------------------------------------------
+| Ethical / Fairness |             |              |
+---------------------------------------------------
+| Operational        |             |              |
+---------------------------------------------------
+| Reputational       |             |              |
+---------------------------------------------------
+
+## 4. Stakeholder Analysis
+- Stakeholder Group
+- Impact Severity: Low/Medium/High
+
+## 5. Harm Scenarios
+- Scenario: e.g., Bias in hiring, privacy breach
+- Likelihood (1–5)
+- Impact (1–5)
+- Risk Score = Likelihood × Impact
+
+## 6. Data Risk Assessment
+- Data Types: Personal, Sensitive, Behavioral, External
+- Data Quality: completeness, noise, proxy variables
+- Data Rights: consent, retention, sharing
+
+## 7. Technical Assessment
+- Fairness Risks: protected attributes, subgroup balance
+- Explainability: SHAP/LIME/Interpretability
+- Safety & Security: adversarial attacks, prompt injection (if LLM), model extraction
+
+## 8. Mitigation Plan
+- Risk Description
+- Control Applied
+- Owner
+- Status
+- Residual Risk
+
+## 9. Deployment & Monitoring Requirements
+- Metrics: Accuracy, Drift, Fairness, Robustness, Latency
+- Alert Thresholds: PSI >0.2, DI <0.8, TPR/FPR gap >10%
+- Monitoring Frequency
+
+## 10. Approval & Sign-Off
+- Model Owner:
+- Compliance / Legal:
+- Security Lead:
+- AI Governance Council:
