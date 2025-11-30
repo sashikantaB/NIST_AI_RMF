@@ -1,0 +1,71 @@
+# Model Card — <Model Name>
+
+## 1. Overview
+- Model Name: 
+- Version: 
+- Owner / Team: 
+- Primary Use Case: 
+- Intended Users: 
+- Business Goal / Purpose: 
+
+## 2. Model Description
+- Model Type: (e.g., XGBoost, BERT, CNN, LLM)
+- Input Data: 
+- Output: 
+- Training Date / Timeframe: 
+- Pipeline Location / Repo: 
+
+## 3. Data Summary
+### 3.1 Data Sources
+- Internal / External
+- Collection method
+- Sampling strategy
+
+### 3.2 Data Characteristics
+- Number of records
+- Feature types (numeric, categorical, text)
+- Protected attributes? (Yes/No)
+- Preprocessing steps
+
+## 4. Performance Evaluation
+### 4.1 Overall Metrics
+- Accuracy / F1 / AUC
+- Precision / Recall
+- Calibration score
+- Latency / TPS
+
+### 4.2 Subgroup Metrics
+- Metrics broken down by Gender, Age, Income, Location
+- Table format to compare
+
+## 5. Fairness & Ethical Considerations
+- Fairness Metrics: Disparate Impact, Equalized Odds, Statistical Parity
+- Known Biases / Limitations
+- Mitigation Methods Used (Pre-, In-, Post-processing)
+
+## 6. Robustness & Security
+- Stress tests conducted
+- Adversarial resilience
+- Red-team test summary
+- Vulnerable failure modes
+
+## 7. Privacy & Safety
+- PII present? (Yes/No)
+- Anonymization method
+- Access controls
+- Regulatory compliance: GDPR / DPDP / HIPAA / SOC2
+
+## 8. Intended Use & Misuse
+- Intended Use
+- Out-of-Scope / Misuse Scenarios
+
+## 9. Monitoring Plan
+- Metrics to track: Accuracy, Drift (PSI/KL), Fairness
+- Retraining cadence
+- HITL override rate
+- Alert thresholds
+
+## 10. Model Lifecycle Status
+- Development / Validation / Production / Retired
+- Last Review Date:
+- Next Scheduled Review:
