@@ -1,0 +1,73 @@
+# AI Impact Assessment (AIA) — Loan Approval Predictor
+
+## 1. Basic Information
+- Model Name              : Loan Approval Predictor
+- Business Unit           : Credit Risk Analytics
+- Model Owner             : Arjun Rao
+- Risk/Compliance Reviewer: Priya Desai
+- Version                 : 1.2.3
+- Date                    : 28-Nov-2025
+
+## 2. Use Case Description
+- Problem      : Predict loan approval probability
+- Decision type: Advisory (loan officer makes final decision)
+- Stakeholders : Applicants, Loan officers, Credit team, Regulators
+
+## 3. Context & Criticality Assessment
+| Impact Type        | Description                            | Score (1–5)  |
+|--------------------|----------------------------------------|--------------|
+| Legal/Regulatory   | Must comply with DPDP/GDPR             |      5       |
+| Financial          | Incorrect predictions → default risk   |      5       |
+| Ethical / Fairness | Potential bias against gender/age      |      4       |
+| Operational        | Model downtime affects loan processing |      3       |
+| Reputational       | Public perception of fairness          |      4       |
+
+
+## 4. Stakeholder Analysis
+| Stakeholder     | Impact Severity |
+|-----------------|-----------------|
+| Applicants      |      High       |
+| Loan Officers   |      Medium     |
+| Compliance Team |      High       |
+| Regulators      |      High       |
+
+
+## 5. Harm Scenarios
+| Scenario                       | Likelihood | Impact | Risk Score |
+|--------------------------------|-----------|--------|-------------|
+| Gender bias → unfair rejection | 3         | 5      | 15          |
+| Age bias → unfair rejection    | 2         | 4      | 8           | 
+| Data leak / PII exposure       | 2         | 5      | 10          |
+| Model drift → poor prediction  | 3         | 4      | 12          |
+| Automation misuse              | 1         | 4      | 4           |
+
+## 6. Data Risk Assessment
+- Data Types  : Personal, Financial, Sensitive
+- Data Quality: 98% complete, minor noise in ZIP codes
+- Data Rights : Consent collected, retention = 5 years, no sharing with external vendors
+
+## 7. Technical Assessment
+- Fairness Risks   : Gender and age underrepresented slightly
+- Explainability   : SHAP used for feature contribution
+- Safety & Security: Adversarial testing completed, prompt injection not applicable (non-LLM)
+
+## 8. Mitigation Plan
+| Risk              | Control Applied                          | Owner         | Status      | Residual Risk |
+|-------------------|------------------------------------------|---------------|-------------|---------------|
+| Gender bias       | Reweighting, threshold adjustment        | DS Lead       | Implemented | Low           |
+| Age bias          | Additional subgroup analysis, HITL       | DS Lead       | Implemented | Low           |
+| Data leak         | Tokenization, encryption, access control | Security Lead | Active      | Low           |
+| Model drift       | Drift monitoring + retraining            | MLOps         | Active      | Medium        |
+| Automation misuse | Policy & governance                      | Compliance    | Active      | Low           |
+
+## 9. Deployment & Monitoring Requirements
+- Accuracy          : PSI, DI, EOD monitored daily
+- Alerts            : DI <0.8, PSI >0.2
+- Retraining        : Quarterly or on alert
+- HITL override rate: max 10%
+
+## 10. Approval & Sign-Off
+- Model Owner          : Arjun Rao 
+- Compliance / Legal   : Priya Desai 
+- Security Lead        : Rohan Mehta 
+- AI Governance Council: Approved 
